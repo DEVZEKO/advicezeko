@@ -1,0 +1,116 @@
+@font-face {
+    font-family: fontAdvice;
+    src: url(./font/Manrope/Manrope-VariableFont_wght.ttf)
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(218, 23%, 16%)
+}
+
+.wrapper {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    background-color:hsl(217, 19%, 24%); 
+    padding: 0 60px;
+    margin: 200px auto;
+    border-radius: 25px;
+    height: 50%;
+    width: 50%;
+    font-size:x-large;
+    font-weight: 800;
+}
+
+.diceWrapper {
+    background-color: hsl(150, 100%, 66%);
+    padding: 4%;
+    margin: 35px;
+    margin-bottom: -25px;
+    border-radius: 50px;
+}
+
+.diceWrapper > img {
+    width: 25px;
+    height: 25px;
+}
+
+.divider {
+    margin: 0px;
+    padding: 0px;
+}
+
+#adviceText {
+    color: white;
+    font-family: fontAdvice;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+#adviceNum {
+    color:  hsl(150, 100%, 66%);
+}
+
+@media (max-width: 375px) {
+    .wrapper {
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        background-color:hsl(217, 19%, 24%); 
+        padding: 0 60px;
+        margin: 180px 10px;
+        border-radius: 25px;
+        height: 50%;
+        width: 50%;
+        font-size:large;
+        font-weight:800px;
+    }
+
+    #adviceText {
+        color: white;
+        font-family: fontAdvice;
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 538px) {
+    .divider {
+        content: url(./images/pattern-divider-mobile.svg);
+        margin: 10px;
+        width: 150px;
+        height:15px;
+    }
+}
+
+@media (max-width: 723px) {
+    .wrapper {
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        background-color:hsl(217, 19%, 24%); 
+        padding: 0 30px;
+        margin: 25%;
+        border-radius: 25px;
+        height: 50%;
+        width: 50%;
+        font-size:large;
+        font-weight:800px;
+    }
+
+    .divider {
+        content: url(./images/pattern-divider-mobile.svg);
+        margin: 10px;
+        width: 150px;
+        height:15px;
+    }
+}
